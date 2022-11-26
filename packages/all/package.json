@@ -1,6 +1,6 @@
 {
   "name": "@lovelliu/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Lovell's ESlint config",
   "author": "Lovell Liu",
   "license": "MIT",
