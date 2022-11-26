@@ -179,7 +179,13 @@ module.exports = {
   ],
   rules: {
     // import
-    'import/order': 'error',
+    'import/order': ['error', {
+      groups: [
+        'type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object',
+      ],
+      pathGroups: [{ pattern: '@/**', group: 'internal' }],
+      pathGroupsExcludedImportTypes: ['type'],
+    }],
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
@@ -310,7 +316,7 @@ module.exports = {
     // Use new when throwing error
     'unicorn/throw-new-error': 'error',
 
-    'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
     'eslint-comments/disable-enable-pair': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
