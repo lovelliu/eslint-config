@@ -1,0 +1,30 @@
+{
+  "name": "@lovelliu/eslint-config-react",
+  "version": "0.0.6",
+  "description": "",
+  "author": "Lovell Liu",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@lovelliu/eslint-config-ts": "workspace:*",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "react": "^18.2.0",
+    "typescript": "^4.9.3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@lovelliu/eslint-config-monorepo",
+  "version": "0.0.6",
+  "private": true,
+  "packageManager": "pnpm@7.17.0",
+  "author": "Lovell Liu",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@lovelliu/eslint-config": "*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.28.0",
+    "eslint-plugin-antfu": "^0.31.0",
+    "typescript": "^4.9.3"
+  }
+}
