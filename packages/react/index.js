@@ -1,13 +1,13 @@
 module.exports = {
   extends: [
+    '@lovelliu/eslint-config-ts',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/strict',
-    '@lovelliu/eslint-config-ts',
+    'plugin:jsx-a11y/recommended',
   ],
   settings: {
     react: {
-      version: '>=17',
+      version: '17.0',
     },
   },
   rules: {
@@ -26,7 +26,6 @@ module.exports = {
     'react/jsx-no-constructed-context-values': [2],
     'react/no-access-state-in-setstate': [2],
     'react/no-array-index-key': [2],
-    'jsx-a11y/prefer-tag-over-role': [2, { roles: ['button'] }],
     'jsx-quotes': [
       'error',
       'prefer-double',
