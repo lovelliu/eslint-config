@@ -1,7 +1,6 @@
 {
   "name": "@lovelliu/eslint-config-react",
   "version": "0.0.11",
-  "description": "",
   "author": "Lovell Liu",
   "license": "MIT",
   "keywords": [
