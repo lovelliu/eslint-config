@@ -15,7 +15,7 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@lovelliu/eslint-config": "workspace:*",
+    "@lovelliu/eslint-config": "*",
     "bumpp": "^8.2.1",
     "eslint": "^8.33.0",
     "eslint-plugin-antfu": "^0.35.0",

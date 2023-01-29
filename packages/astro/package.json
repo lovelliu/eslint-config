@@ -1,0 +1,27 @@
+{
+  "name": "@lovelliu/eslint-config-astro",
+  "version": "0.0.11",
+  "author": "Lovell Liu",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@lovelliu/eslint-config-ts": "workspace:*",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
+}

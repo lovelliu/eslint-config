@@ -1,10 +1,13 @@
 const { isPackageExists } = require('local-pkg')
-const React = isPackageExists('react')
+const hasReact = isPackageExists('react')
+const hasAstro = isPackageExists('astro')
 
 module.exports = {
   extends: [
-    React
+    hasReact
       ? '@lovelliu/eslint-config-react'
-      : '@lovelliu/eslint-config-vue',
+      : hasAstro
+        ? '@lovelliu/eslint-config-astro'
+        : '@lovelliu/eslint-config-vue',
   ],
 }
