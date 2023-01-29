@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/strict',
     '@lovelliu/eslint-config-ts',
   ],
   settings: {
@@ -25,5 +26,6 @@ module.exports = {
     'react/jsx-first-prop-new-line': [2, 'multiline'],
     'react/jsx-handler-names': [2, { eventHandlerPrefix: 'handle', eventHandlerPropPrefix: 'on' }],
     'react/jsx-no-useless-fragment': [2],
+    'jsx-a11y/prefer-tag-over-role': [2, { roles: ['button'] }],
   },
 }
