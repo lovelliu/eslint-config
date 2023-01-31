@@ -1,3 +1,10 @@
+const { isPackageExists } = require('local-pkg')
+
+const TS = isPackageExists('typescript')
+
+if (!TS)
+  console.warn('[@lovelliu/eslint-config] TypeScript is not installed, fallback to JS only.')
+
 module.exports = {
   extends: [
     '@lovelliu/eslint-config-ts',
@@ -26,6 +33,7 @@ module.exports = {
     'react/jsx-no-constructed-context-values': [2],
     'react/no-access-state-in-setstate': [2],
     'react/no-array-index-key': [2],
+    'react-hooks/exhaustive-deps': 0,
     'jsx-quotes': [
       'error',
       'prefer-double',

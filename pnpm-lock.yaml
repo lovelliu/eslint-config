@@ -65,10 +65,12 @@ importers:
       eslint: ^8.33.0
       eslint-plugin-astro: ^0.23.0
       eslint-plugin-jsx-a11y: ^6.7.1
+      local-pkg: ^0.4.3
     dependencies:
       '@lovelliu/eslint-config-ts': link:../typescript
       eslint-plugin-astro: 0.23.0_eslint@8.33.0
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.33.0
+      local-pkg: 0.4.3
     devDependencies:
       eslint: 8.33.0
 
@@ -114,11 +116,13 @@ importers:
       eslint-plugin-jsx-a11y: ^6.7.1
       eslint-plugin-react: ^7.32.2
       eslint-plugin-react-hooks: ^4.6.0
+      local-pkg: ^0.4.3
     dependencies:
       '@lovelliu/eslint-config-ts': link:../typescript
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.33.0
       eslint-plugin-react: 7.32.2_eslint@8.33.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.33.0
+      local-pkg: 0.4.3
     devDependencies:
       eslint: 8.33.0
 
