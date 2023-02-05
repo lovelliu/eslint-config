@@ -38,5 +38,6 @@ module.exports = {
       'error',
       'prefer-double',
     ],
+    'jsx-a11y/media-has-caption': 0,
   },
 }
