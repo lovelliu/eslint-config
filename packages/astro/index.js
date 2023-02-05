@@ -21,6 +21,21 @@ module.exports = {
       },
       rules: {
         'astro/semi': ['error', 'never'],
+        'no-multiple-empty-lines': 0,
+      },
+    },
+    {
+      files: ['**/*.astro/*.js', '*.astro/*.js'],
+      env: {
+        browser: true,
+        es2020: true,
+      },
+      parserOptions: {
+        sourceType: 'module',
+      },
+      rules: {
+        'no-multiple-empty-lines': 0,
+        'no-trailing-spaces': 0,
       },
     },
   ],
