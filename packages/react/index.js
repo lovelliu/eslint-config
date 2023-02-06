@@ -28,12 +28,15 @@ module.exports = {
     'react/jsx-closing-bracket-location': [2, 'line-aligned'],
     'react/jsx-closing-tag-location': [2],
     'react/jsx-first-prop-new-line': [2, 'multiline'],
-    'react/jsx-handler-names': [2, { eventHandlerPrefix: 'handle', eventHandlerPropPrefix: 'on' }],
+    'react/jsx-handler-names': [2, {
+      eventHandlerPrefix: 'handle',
+      eventHandlerPropPrefix: 'on',
+    }],
     'react/jsx-no-useless-fragment': [2],
     'react/jsx-no-constructed-context-values': [2],
     'react/no-access-state-in-setstate': [2],
     'react/no-array-index-key': [2],
-    'react-hooks/exhaustive-deps': 0,
+    'react-hooks/exhaustive-deps': 1,
     'jsx-quotes': [
       'error',
       'prefer-double',
