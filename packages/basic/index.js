@@ -184,7 +184,7 @@ module.exports = {
     // import
     'import/order': ['error', {
       groups: [
-        'type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object',
+        'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type',
       ],
       pathGroups: [{ pattern: '@/**', group: 'internal' }],
       pathGroupsExcludedImportTypes: ['type'],
