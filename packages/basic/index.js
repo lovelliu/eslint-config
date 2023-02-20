@@ -184,10 +184,11 @@ module.exports = {
     // import
     'import/order': ['error', {
       groups: [
-        'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type',
+        'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown', 'type',
       ],
       pathGroups: [{ pattern: '@/**', group: 'internal' }],
       pathGroupsExcludedImportTypes: ['type'],
+      warnOnUnassignedImports: true,
     }],
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
