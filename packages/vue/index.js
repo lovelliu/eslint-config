@@ -35,6 +35,9 @@ module.exports = {
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/prefer-import-from-vue': 'off',
+    'vue/no-unused-vars': ['error', {
+      ignorePattern: '^_',
+    }],
 
     // reactivity transform
     'vue/no-setup-props-destructure': 'off',
