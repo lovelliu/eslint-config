@@ -187,8 +187,8 @@ module.exports = {
         'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown', 'type',
       ],
       'pathGroups': [
+        { pattern: '*.css', group: 'unknown', patternOptions: { matchBase: true } },
         { pattern: '@/**', group: 'internal' },
-        { pattern: 'virtual:**', group: 'unknown', position: 'after' },
       ],
       'pathGroupsExcludedImportTypes': ['type'],
       'warnOnUnassignedImports': true,
