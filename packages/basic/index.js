@@ -183,12 +183,16 @@ module.exports = {
   rules: {
     // import
     'import/order': ['error', {
-      groups: [
+      'groups': [
         'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown', 'type',
       ],
-      pathGroups: [{ pattern: '@/**', group: 'internal' }],
-      pathGroupsExcludedImportTypes: ['type'],
-      warnOnUnassignedImports: true,
+      'pathGroups': [
+        { pattern: '@/**', group: 'internal' },
+        { pattern: 'virtual:**', group: 'unknown', position: 'after' },
+      ],
+      'pathGroupsExcludedImportTypes': ['type'],
+      'warnOnUnassignedImports': true,
+      'newlines-between': 'always',
     }],
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
